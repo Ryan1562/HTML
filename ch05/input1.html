@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title></head><body>
+<!-- size : 화면에 보이는 크기 실제 입력되는 데이터 크기놔는 관계 없음
+maxlength : 실제 들어가는 글자의 크기 -->
+<!-- type="number" keybord가 숫자위주, 전달할 때 문자를 입력하면 에러 처리
+type="email"     "      메일주소 사뇽하는 문자 위주, 전달 메일 형식이 다르면 에러
+type="tel"       "      숫자와 - 위주 -->
+<!-- type="submit"   action에 있는 url로 입력한 데이터를 전달
+type="reset"    매 처음 상태로 초기화 -->
+<form action="http://www.choongang.co.kr">
+	이름 : <input type="text" name="name" size="6"><p>
+	나이 : <input type="number" name="age" max="99" min="0"><p>
+	메일 : <input type="email" name="email" value="k1@k.com"><p>
+	전화 : <input type="tel" name="tel" value="010-1111-1111"><p>
+	주소 : <input type="text" name="address" value="서울 강남구" readonly="readonly"><p>
+	<input type="submit" value="확인">
+	<input type="reset" value="취소">
+</form>
+</body>
+</html>
